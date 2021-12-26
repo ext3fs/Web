@@ -48,4 +48,35 @@
 
 selector 우선순위			: id > class > tag
 
+<style>
+	h1{				: block level element(자신만의 블럭을 가짐)
+		border-width:5px;	
+		border-color:red;
+		border-style:solid;
+		display:inline;		: block level을 inline화 
+	}
+	a{				: inline element
+		border-width:5px;
+		border-color:red;
+		border-style:solid;
+		display:block;
+	}
+</style>
+		
+<style>
+	h1,a{border:5px red solid;}	: 간략화
+</style>
+
+<style>
+	h1{
+		border:5px red solid; 
+		padding:20px;		: border와 content 사이의 간격
+		margin:20px;		: border와 block 사이의 간격		
+		width:100px;		: content의 폭			
+	}
+</style>
+
+
+	
+
 
