@@ -4,6 +4,8 @@
 채팅					: tawk(ext7fs)
 웹사이트 분석기				: https://analytics.google.com
 <!-- -->				: annotation
+<div></div>				: block level tag(아무의미없이 디자인용도)
+<span></span>				: inline tag(아무의미없이 디자인용도)
 <h1></h1>				: heading 1
 <p></p> 				: paragraph
 <strong></strong> 			: strong thickness
@@ -67,6 +69,7 @@ selector 우선순위			: id > class > tag
 	h1,a{border:5px red solid;}	: 간략화
 </style>
 
+//box model
 <style>
 	h1{
 		border:5px red solid; 
@@ -75,6 +78,18 @@ selector 우선순위			: id > class > tag
 		width:100px;		: content의 폭			
 	}
 </style>
+
+//grid
+<style>
+	#test{
+		border:5px solid pink;		
+		display:grid;			: grid 사용
+		grid-template-columns:1fr 2fr;	: fraction(칼럼을 3개로 나누어 1:2비율로사용)
+	}
+	div{
+		border:5px solid gray;
+	}
+</style>	
 
 
 	
