@@ -91,7 +91,24 @@ selector 우선순위			: id > class > tag
 	}
 </style>	
 
+//media query
+<style>
+	div{
+		border:10px solid green;
+		font-size:60px;
+	}
+	@media(min-width:800px){		: media query(최소폭이 800px 이면 == width > 800)
+		div{
+			display:none;		: 아무것도 안보임
+		}
+	}
+</style>
 
+<head>
+	<link rel="stylesheet" href="style.css">: 외부 style sheet를 연결
+	       |
+	     현재 문서와 외부 리소스 사이의 연관관계를 명시(relationship)
+</head>
 	
 
 
