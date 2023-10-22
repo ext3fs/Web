@@ -1,1 +1,20 @@
-test
+10> CSS 고급 선택자
+	10-1) 연결 선택자
+		1. 하위선택자(descendant selector)
+			section p {} : section 태그의 모든 하위 p태그
+		2. 자식선택자(child selector)
+			section > p {} : section 태그의 직계 자식 p태그
+		3. 인접형제선택자(adjacent selector)
+			h1 + p {} : h1 태그의 첫번째 형제 p태그
+		4. 형제선택자(sibling selector)
+   			h1 ~ p {} : h1 태그의 뒤의 모든 형제 p태그
+
+	10-2) 속성 선택자
+		1. a[href] {} : a태그에서 href 속성이 있는것 선택
+		2. [href = "_blank"] {} : href 속성이 _blank인것 선택(공백으로 구분되어있는것까지도 완전히 일치해야함)
+		3. [class ~= "button"] {} : class 속성의 값이 button인것 선택(공백으로 구분되어있는것은 별개로 취급)
+		4. [title |= "us"] {} : title 속성이 us- 로 시작하는것 선택(공백으로 구분되있는것을 별개로 취급안함)
+		5. [title ^= eng] {} : title 속성이 eng로 시작하는것 선택(공백으로 구분되어있는것을 별개로 취급) 
+		6. [href $= xls] {} : href 속성의 값이 xls로 끝나는것 선택(공백으로 구분되어있는것을 별개로 취급)  
+		7. [href *= "w3"] {} : href 속성의 값이 w3문자열을 포함하는것 선택  
+
